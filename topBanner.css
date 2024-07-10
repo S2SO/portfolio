@@ -1,0 +1,17 @@
+.topbanner {
+  width: 100vw;
+  height: auto;
+  max-height: 700px;
+  overflow: hidden;
+}
+.imgbox {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+.topbanner > .imgbox > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

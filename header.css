@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+}
+header {
+  background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+  font-family: var(--font-stack);
+  z-index: 1;
+}
+nav {
+  max-width: 1024px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-color);
+  margin: 0 auto;
+}
+nav > .logoBox {
+  font-size: var(--font-size-logo);
+  margin-left: 50px;
+  cursor: pointer;
+}
+.head-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: var(--font-size-normal);
+  font-weight: light;
+  margin-right: 50px;
+}
+.head-menu > li {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .head-menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    color: var(--primary-color);
+    margin-right: 50px;
+    font-size: var(--font-size-logo);
+  }
+}
